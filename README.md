@@ -164,6 +164,22 @@ This database demonstrates:
 * Implement triggers for automatic updates
 * Integrate with a full backend application (C# / ASP.NET)
 * Add reporting queries (leaderboards, stats)
+## Project Structure
+RaceDay-System/
+│
+├── README.md
+├── ERD/
+│   └── RaceDay_ERD.png
+│
+├── Database/
+│   └── RaceDayDB.sql
+│
+├── API-Documentation/
+│   └── API_Endpoints.md
+│ 
+│
+│
+└── .gitignore
 
 ---
 
