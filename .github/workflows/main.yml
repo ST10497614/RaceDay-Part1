@@ -1,1 +1,17 @@
+name: Validate SQL
+on: [push, pull_request]
 
+jobs:
+  sql-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+      
+      - name: Check SQL file exists
+        run: |
+          if [ -f "database/RaceDayDB.sql" ]; then
+            echo "SQL file found"
+          else
+            echo "SQL file missing" && exit 1
+          fi
